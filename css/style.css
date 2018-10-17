@@ -51,7 +51,44 @@ footer {
      text-decoration: underline;
  }
 
+ 
  /*===================== END TOPNAV ====================*/
+
+/*=================START GRIDINSTÄLLNINGAR======*/
+
+ .grid-master {
+     display: grid;
+     grid-template-areas:
+        "header header header header header header"
+        "main main main main main main"
+        "aside aside aside aside aside aside"
+        "footer footer footer footer footer footer"
+
+ }
+
+ header {
+    grid-area: header;
+
+ }
+
+ main {
+     grid-area: main;
+ }
+
+ aside {
+     grid-area: aside;
+     background-color: burlywood;
+ }
+
+ footer {
+     grid-area: footer;
+     background-color: darkgrey;
+     color: white;
+ }
+
+/*=================END GRIDINSTÄLLNINGAR======*/
+
+
 
 /*kärnvärden centrerade och stylade*/
 .centered-usp {
@@ -73,4 +110,14 @@ footer {
 .img-wide {
     max-width: 100%;
     width: auto;
+}
+
+/*för att definiera hur t ex kolumner ska se ut i bredd 600 px och därutöver; vad som ska visas annorlunda!*/
+@media screen and (min-width: 600px) {
+    .grid-master {
+        grid-template-areas:
+           "header header header header header header"
+           "main main main main aside aside"
+           "footer footer footer footer footer footer"
+    }
 }
