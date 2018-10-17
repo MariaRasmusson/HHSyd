@@ -1,3 +1,4 @@
+/*======================== HTML ==============================================*/
 
 body {
     margin-top: 6em; /*för att få ned innehållet under menytext*/
@@ -13,6 +14,34 @@ footer {
     padding: 4em 0; /*fyra rader uppe och nere - inget i sidorna.*/
 }
 
+/*=====================classes=========================================*/
+
+ /*===================== START TOPNAV ====================*/
+
+.topnav {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed; /*menyn följer med när man scrollar*/
+    width: 100%;
+    top: 0;
+    left: 0em;
+}
+
+.topnav ul {
+    list-style: none;
+    
+}
+
+
+ /* visa alla listelement i nav på en linje*/
+ .topnav ul li {
+    display: inline;
+    margin-left: 0;
+ }
+
+
+ /*===================== END TOPNAV ====================*/
+
+/*kärnvärden centrerade och stylade*/
 .centered-usp {
     color: white;
     text-align: center;
