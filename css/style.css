@@ -63,7 +63,6 @@ footer {
         "main main main main main main"
         "aside aside aside aside aside aside"
         "footer footer footer footer footer footer"
-
  }
 
  header {
@@ -77,13 +76,12 @@ footer {
 
  aside {
      grid-area: aside;
-     background-color: burlywood;
  }
 
  footer {
      grid-area: footer;
-     background-color: darkgrey;
-     color: white;
+    background-color: plum;
+     color: black;
  }
 
 /*=================END GRIDINSTÄLLNINGAR======*/
@@ -110,6 +108,29 @@ footer {
 .img-wide {
     max-width: 100%;
     width: auto;
+}
+
+/*=========== ID ==========================*/
+
+#section1 {
+    background-color: black;
+}
+
+#section2 {
+    background-color: rgb(128, 128, 38);
+}
+#section3 {
+    background-color: maroon;
+}
+#section4 {
+    background-color: darkgrey;
+
+}
+#section5 {
+    background-color: darkblue;
+}
+#section6 {
+    background-color: purple;
 }
 
 /*för att definiera hur t ex kolumner ska se ut i bredd 600 px och därutöver; vad som ska visas annorlunda!*/
