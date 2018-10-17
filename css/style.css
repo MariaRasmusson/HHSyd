@@ -1,0 +1,7 @@
+
+body {
+    margin-top: 6em; /*för att få ned innehållet under menytext*/
+    background-color: purple;
+    color: white; /*berör all text i dokumentet*/
+    font-family: 'Libre+Franklin', sans-serif; /*font-family är typsnitt för all text i body*/
+}
