@@ -13,6 +13,14 @@ footer {
     padding: 4em 0; /*fyra rader uppe och nere - inget i sidorna.*/
 }
 
+.centered-usp {
+    color: white;
+    text-align: center;
+    font-size: 6vw;
+    padding-bottom: auto; /*OBSOBSOBSOBS ----JAG FÅR INTE CENTRERINGEN TOP/BOTTOM RÄTT!!!!!!!!!*/
+   
+}
+
 /*responsiva bilder*/
 .img-fluid {
     max-width: 100%;
@@ -20,3 +28,8 @@ footer {
     padding-bottom: 1em;
 }
 
+/*bild som ska täcka hela vw*/
+.img-wide {
+    max-width: 100%;
+    width: auto;
+}
