@@ -22,22 +22,34 @@ footer {
     background-color: rgba(0, 0, 0, 0.6);
     position: fixed; /*menyn följer med när man scrollar*/
     width: 100%;
-    top: 0;
-    left: 0em;
+    top: 0; /*ingen topmarginal*/
+    left: 0; /* ingen sidomarginal*/
 }
 
 .topnav ul {
     list-style: none;
     
 }
-
-
  /* visa alla listelement i nav på en linje*/
  .topnav ul li {
     display: inline;
     margin-left: 0;
  }
 
+ /*alla länkar i listelement som finns i ul i en nav ska vara lila*/
+ .topnav ul li a {
+     color: white;
+     padding: 1em;
+     text-decoration: none; /*länkarna ska inte vara understrukna*/
+     font-weight: bold; /*istället ska länkarna vara lite fetare*/
+    /* display: none läggs in när hamburgermenyn ska på plats===============OBSOBSOBS!!*/
+ }
+ 
+ /*för att få länkarna understrukna när du hovrar över dem*/
+ .topnav ul li a:hover {
+     background-color: plum;
+     text-decoration: underline;
+ }
 
  /*===================== END TOPNAV ====================*/
 
