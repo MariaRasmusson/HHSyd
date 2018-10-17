@@ -5,3 +5,18 @@ body {
     color: white; /*berör all text i dokumentet*/
     font-family: 'Libre+Franklin', sans-serif; /*font-family är typsnitt för all text i body*/
 }
+
+
+/*centrerad text i footern*/
+footer {
+    text-align: center;
+    padding: 4em 0; /*fyra rader uppe och nere - inget i sidorna.*/
+}
+
+/*responsiva bilder*/
+.img-fluid {
+    max-width: 100%;
+    width: auto;
+    padding-bottom: 1em;
+}
+
