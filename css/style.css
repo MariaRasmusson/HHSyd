@@ -1,8 +1,8 @@
-/*======================== HTML ==============================================*/
+/*HTML ==============================================*/
 
 body {
     margin-top: 6em; /*för att få ned innehållet under menytext*/
-    background-color: purple;
+    background-color: darkgrey;
     color: white; /*berör all text i dokumentet*/
     font-family: 'Libre+Franklin', sans-serif; /*font-family är typsnitt för all text i body*/
 }
@@ -14,7 +14,7 @@ footer {
     padding: 4em 0; /*fyra rader uppe och nere - inget i sidorna.*/
 }
 
-/*=====================classes=========================================*/
+/*CLASSES ======================================*/
 
  /*===================== START TOPNAV ====================*/
 
@@ -51,10 +51,11 @@ footer {
      text-decoration: underline;
  }
 
- 
  /*===================== END TOPNAV ====================*/
 
-/*=================START GRIDINSTÄLLNINGAR======*/
+
+
+/*====================== START GRID ====================*/
 
  .grid-master {
      display: grid;
@@ -85,11 +86,18 @@ footer {
     color: black;
  }
 
-/*=================END GRIDINSTÄLLNINGAR======*/
+/*================= END GRID ====================*/
 
 
 
-/*kärnvärden centrerade och stylade*/
+.wrapper {
+    width: 80vw; /*80% av viewportens bredd*/
+    margin: auto; /*för att centrera wrappern;  auto - betyder vänster och höger*/
+    padding-top: 0.5em
+}
+
+
+/*USP-värden centrerade och stylade*/
 .centered-usp {
     color: white;
     text-align: center;
