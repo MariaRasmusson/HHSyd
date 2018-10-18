@@ -63,22 +63,24 @@ footer {
         "header header header header header header"
         "main main main main main main"
         "aside aside aside aside aside aside"
-        "footer footer footer footer footer footer"
+        "footer footer footer footer footer footer";
+
  }
+
+
 
  header {
     grid-area: header;
-
- }
+     }
 
  main {
      grid-area: main;
      text-align: center;
- }
+     }
 
- aside {
+/* aside {
      grid-area: aside;
- }
+ }*/
 
  footer {
     grid-area: footer;
@@ -109,8 +111,10 @@ footer {
 /*responsiva bilder*/
 .img-fluid {
     max-width: 100%;
-    width: auto;
-    padding-bottom: 1em;
+    width: 90%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    
 }
 
 /*bild som ska täcka hela vw*/
