@@ -72,6 +72,7 @@ footer {
 
  main {
      grid-area: main;
+     text-align: center;
  }
 
  aside {
@@ -79,9 +80,9 @@ footer {
  }
 
  footer {
-     grid-area: footer;
+    grid-area: footer;
     background-color: plum;
-     color: black;
+    color: black;
  }
 
 /*=================END GRIDINSTÄLLNINGAR======*/
@@ -138,7 +139,7 @@ footer {
     .grid-master {
         grid-template-areas:
            "header header header header header header"
-           "main main main main aside aside"
+           "main main main main main main"      
            "footer footer footer footer footer footer"
     }
 }
