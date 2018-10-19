@@ -90,6 +90,7 @@ display: block;
 
 .grid-container {
      display:grid;
+     grid-gap: 10px; 
  grid-template-areas:
     "start start start start start start"
     "sub1 sub1 sub1 sub2 sub2 sub2"    
