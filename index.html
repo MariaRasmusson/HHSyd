@@ -5,20 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hov och hälsa - funktionell balans</title>
+
     <link rel="stylesheet" href="css/normalize.css"><!--Länk för att nollställa marg.etc i alla browsers-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
         rel="stylesheet"><!--länkar till menyikonen på google fonts-->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"><!--Länkar till ikoner från fontawsome-->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-
-      
     <div class="wrapper">
             <header>
-                <nav class="topnav">
+                <nav class="topnav" id="myTopnav">
                     <ul>
                         <li><a href="#startsection">Start</a></li>
                         <li><a href="#section2">Behandlingar</a></li>
@@ -26,6 +24,11 @@
                         <li><a href="#section4">Om</a></li>
                         <li><a href="#section5">Kontakt</a></li>
                         <li><a href="#section6">Resedagbok</a></li>
+                        <li>
+                            <a href="javascript:void(0);" id="menu-icon" onclick="navToggle()">
+                                <i class="material-icons">menu</i>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
             </header>
@@ -93,8 +96,24 @@
         </div><!--/ .grid-container-->
 
             <footer>
-                <small>copyright 2018 Hov och hälsa i Syd Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus incidunt asperiores porro, ab assumenda exercitationem commodi maiores dolore illum quasi ipsum nulla dolorum consequatur itaque ex, nihil rerum esse. Deleniti.</small>
+                <small>Copyright &copy; 2018 Hov och hälsa i Syd <br>
+                Innehar F-skatt<br>
+            Organisationsnummer 556831-2345</small>
             </footer>
     </div><!--/ .wrapper-->
+
+  
+    <script>
+        /* Funktion som adderar/tar bort klassen "dropped" på klassen "topnav" när användaren klickar på menyikonen. */
+
+        function navToggle() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav" ) {
+                x.className += " dropped";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>  
 </body>
 </html>

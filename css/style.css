@@ -2,7 +2,7 @@
 
 body {
     margin-top: 6em; /*för att få ned innehållet under menytext*/
-    background-color: pink;
+    background-color: lightgrey;
     color: white; /*berör all text i dokumentet*/
     font-family: 'Libre+Franklin', sans-serif; /*font-family är typsnitt för all text i body*/
 }
@@ -19,16 +19,15 @@ footer {
  /*===================== START TOPNAV ====================*/
 
 .topnav {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.5);
     position: fixed; /*menyn följer med när man scrollar*/
-    width: 100%;
+    width: 100%; /*måste anges när position är "fixed" och att man vill den ska ha full sidbredd.*/
     top: 0; /*ingen topmarginal*/
     left: 0; /* ingen sidomarginal*/
 }
 
 .topnav ul {
     list-style: none;
-    
 }
  /* visa alla listelement i nav på en linje*/
  .topnav ul li {
@@ -42,8 +41,9 @@ footer {
      padding: 1em;
      text-decoration: none; /*länkarna ska inte vara understrukna*/
      font-weight: bold; /*istället ska länkarna vara lite fetare*/
-    /* display: none läggs in när hamburgermenyn ska på plats===============OBSOBSOBS!!*/
+     display: none;
  }
+
  
  /*för att få länkarna understrukna när du hovrar över dem*/
  .topnav ul li a:hover {
@@ -51,7 +51,35 @@ footer {
      text-decoration: underline;
  }
 
- /*===================== END TOPNAV ====================*/
+ /*== START PÅ HAMBURGERMENYN =======================================*/
+ /*vår selector är i vår ul li & benämns som first child. Första childen i listelementet är en a-länk. Påverkar även paddingen på topnav ul li a */
+ .topnav ul li:first-child > a {
+     display: inline-block;
+ }
+ 
+ #menu-icon {
+     float:right; /*för att separera och i detta fall få elementet lägga sig till höger ( som en bild).*/
+     display: block;
+ }
+
+ /* två conditions som måste vara uppfyllda för att regeln ska gälla.*/
+ .topnav.dropped ul li a {
+display: block;
+ }
+
+ /*när menyn är dropped ska menyiconen synas uppe till höger*/
+ .topnav.dropped #menu-icon {
+     position: absolute;
+     right: 0;
+     top: 0;
+ }
+
+ /*hamburgermenyn anpassas i storlek till övrig text på menyraden.*/
+ #material-icon {
+     font-size: 0.8em;
+ }
+
+ /*===================== END TOPNAV & HAMBURGERMENY ===================*/
 
 
 
@@ -172,6 +200,15 @@ footer {
 
 /*för att definiera hur t ex kolumner ska se ut i bredd 600 px och därutöver; vad som ska visas annorlunda jämfört med hur de visas på mobilskärm!*/
 @media screen and (min-width: 600px) {
+
+    #menu-icon {
+        display: none;
+    }
+
+    .topnav ul li a {
+        display: inline-block /*blockegenskaper för att behålla padding o övrigt men inlineplacering*/
+    }
+
     .grid-master {
         grid-template-areas:
         "header header header header header header"
@@ -182,4 +219,5 @@ footer {
         "sub6 sub6 sub6 sub6 sub6 sub6"
         "footer footer footer footer footer footer";
     }
+    
 }
