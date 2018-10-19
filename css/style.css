@@ -87,56 +87,61 @@ display: block;
 
 /*====================== START GRID ====================*/
 
- .grid-container {
-     display: grid;
-     grid-template-areas:
-        "start start start start start start"
-        "sub1 sub1 sub1 sub1 sub1 sub1"
-        "sub2 sub2 sub2 sub2 sub2 sub2"
-        "sub3 sub3 sub3 sub3 sub3 sub3"
-        "sub4 sub4 sub4 sub4 sub4 sub4"
-        "sub5 sub5 sub5 sub5 sub5 sub5"
-        "sub6 sub6 sub6 sub6 sub6 sub6";
-    grid-gap: 0;
-    padding: 0px;
- }
+
+.grid-container {
+     display:grid;
+ grid-template-areas:
+    "start start start start start start"
+    "sub1 sub1 sub1 sub2 sub2 sub2"    
+    "sub3 sub3 sub3 sub3 sub3 sub3" 
+    "sub54 sub4 sub4 sub5 sub5 sub5" 
+    "sub6 sub6 sub6 sub6 sub6 sub6" 
+}
 
  .start {
      grid-area: start;
      text-align: center;
+     padding-top: 2em;
      }
      
 .sub1 {
     grid-area: sub1;
     text-align: center;
+    padding-top: 2em;
+    padding: 2em;
     }
 
 .sub2 {
     grid-area: sub2;
     text-align: center;
+    padding-top: 2em;
+    padding: 2em;
 }
 
 .sub3 {
     grid-area: sub3;
     text-align: center;
+    padding-top: 2em;
     }
 .sub4 {
     grid-area: sub4;
     text-align: center;
+    padding-top: 2em;
+    padding: 2em;
     }
 .sub5 {
     grid-area: sub5;
     text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding: 2em;
 }
 
-.sub6 {
-    grid-area: sub6;
-    text-align: center;
-}
  footer {
     grid-area: footer;
     background-color: plum;
     color: black;
+    padding-bottom: 4em;
  }
 
 /*================= END GRID ====================*/
@@ -211,13 +216,6 @@ display: block;
     }
 
     .grid-container {
-        grid-template-areas:
-
-        "start start start sub1 sub1 sub1"
-        "sub1 sub1 sub1 sub2 sub2 sub2"
-        "sub3 sub3 sub3 sub4 sub4 sub4"
-        "sub5 sub5 sub5 sub5 sub5 sub5"
-        "sub6 sub6 sub6 sub6 sub6 sub6";
-    }
+     
     
 }
