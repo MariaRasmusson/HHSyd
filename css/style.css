@@ -19,7 +19,7 @@ footer {
  /*===================== START TOPNAV ====================*/
 
 .topnav {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     position: fixed; /*menyn följer med när man scrollar*/
     width: 100%; /*måste anges när position är "fixed" och att man vill den ska ha full sidbredd.*/
     top: 0; /*ingen topmarginal*/
@@ -35,10 +35,10 @@ footer {
     margin-left: 0;
  }
 
- /*alla länkar i listelement som finns i ul i en nav ska vara lila*/
+ /*alla länkar i listelement som finns i ul i en nav ska vara vita*/
  .topnav ul li a {
      color: white;
-     padding: 1em;
+     padding: 0.8em;
      text-decoration: none; /*länkarna ska inte vara understrukna*/
      font-weight: bold; /*istället ska länkarna vara lite fetare*/
      display: none;
@@ -74,12 +74,14 @@ display: block;
      top: 0;
  }
 
- /*hamburgermenyn anpassas i storlek till övrig text på menyraden.*/
+ /*hamburgerikonen anpassas i storlek till övrig text på menyraden.*/
  #material-icon {
      font-size: 0.8em;
  }
 
- /*===================== END TOPNAV & HAMBURGERMENY ===================*/
+ /*== SLUT PÅ HAMBURGERMENYN =======================================*/
+
+ /*===================== END TOPNAV & HAMBURGERMENY===================*/
 
 
 
@@ -105,7 +107,7 @@ display: block;
      }
      
 .sub1 {
-    grid-area: left;
+    grid-area: sub1;
     text-align: center;
     }
 
@@ -114,13 +116,11 @@ display: block;
     text-align: center;
 }
 
-/*=======================SUB3FUNKAREJ OBSOBSOBSOBS!!!!!=============================
+
 .sub3 {
     grid-area: sub3;
-    text-align: right;
-}
-================================END FUNKAR EJ!!!================================*/
-
+    text-align: center;
+    }
 .sub4 {
     grid-area: sub4;
     text-align: center;
@@ -147,16 +147,18 @@ display: block;
 .wrapper {
     width: 80vw; /*80% av viewportens bredd*/
     margin: auto; /*för att centrera wrappern på viewporten;  auto - betyder vänster och höger*/
-    padding-top: 0.5em
+    padding-top: 0.5em;
 }
 
 
 /*USP-värden centrerade och stylade*/
 .centered-usp {
-    color: white;
+    color: #020000;
     text-align: center;
     font-size: 6vw;
-    padding-bottom: auto; /*OBSOBSOBSOBS ----JAG FÅR INTE CENTRERINGEN TOP/BOTTOM RÄTT!!!!!!!!!*/
+    padding: auto;
+ 
+     /*OBSOBSOBSOBS ----JAG FÅR INTE VERTIKAL CENTRERING TOP/BOTTOM RÄTT!!!!!!!!!*/
    
 }
 
