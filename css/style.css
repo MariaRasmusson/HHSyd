@@ -128,7 +128,7 @@ display: block;
 .sub3 {
     grid-area: sub3;
     text-align: center;
-    padding-top: 2em;
+    padding-top: 0;
     }
 .sub4 {
     grid-area: sub4;
@@ -188,9 +188,6 @@ display: block;
     width: auto;
 }
 
-.list {
-    list-style: none; /*tar bort bullets vid listning*/
-}
 
 /*=========== ID ==========================*/
 
