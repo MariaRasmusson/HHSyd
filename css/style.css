@@ -7,6 +7,10 @@ body {
     font-family: 'Libre+Franklin', sans-serif; /*font-family är typsnitt för all text i body*/
 }
 
+a {
+    color: white;
+    text-decoration: underline; 
+}
 
 /*centrerad text i footern*/
 footer {
@@ -182,6 +186,10 @@ display: block;
 .img-wide {
     max-width: 100%;
     width: auto;
+}
+
+.list {
+    list-style: none; /*tar bort bullets vid listning*/
 }
 
 /*=========== ID ==========================*/
