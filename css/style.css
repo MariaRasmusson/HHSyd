@@ -92,11 +92,13 @@ display: block;
      display:grid;
      grid-gap: 10px; 
  grid-template-areas:
-    "start start start start start start"
-    "sub1 sub1 sub1 sub2 sub2 sub2"    
-    "sub3 sub3 sub3 sub3 sub3 sub3" 
-    "sub54 sub4 sub4 sub5 sub5 sub5" 
-    "sub6 sub6 sub6 sub6 sub6 sub6" 
+ "start start start start start start"
+ "sub1 sub1 sub1 sub1 sub1 sub1"
+ "sub2 sub2 sub2 sub2 sub2 sub2"
+ "sub3 sub3 sub3 sub3 sub3 sub3" 
+ "sub4 sub4 sub4 sub4 sub4 sub4"
+ "sub5 sub5 sub5 sub5 sub5 sub5" 
+ "sub6 sub6 sub6 sub6 sub6 sub6";
 }
 
  .start {
@@ -216,7 +218,18 @@ display: block;
         display: inline-block /*blockegenskaper för att behålla padding o övrigt men inlineplacering*/
     }
 
+
     .grid-container {
+        display:grid;
+        grid-gap: 10px; 
+    grid-template-areas:
+        "start start start start start start"
+        "sub1 sub1 sub1 sub2 sub2 sub2"    
+        "sub3 sub3 sub3 sub3 sub3 sub3" 
+        "sub4 sub4 sub4 sub5 sub5 sub5" 
+        "sub6 sub6 sub6 sub6 sub6 sub6";
+
+    }
      
     
 }
