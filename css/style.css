@@ -189,6 +189,25 @@ display: block;
 }
 
 
+/*===OBSOBSOBS!!!!!!jag vill att texten ska ligga på bilden men ej ovanpå menyn!!=====*/
+blockquote {
+    font-size: 1em; /*standardradhöjd är oftast 16px*/
+    font-style: italic;
+    margin: 2em 2em;
+    position: absolute;
+   ; 
+}
+
+/*för att placera citationstecken till varje blockquote på sidan*/
+blockquote:before {
+    content:'"';
+}
+blockquote:after {
+    content:'"';
+}
+
+
+
 /*=========== ID ==========================*/
 
 #startsection {
