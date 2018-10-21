@@ -4,7 +4,7 @@ body {
     margin-top: 6em; /*för att få ned innehållet under menytext*/
     background-color: #C4B399;
     color: white; /*berör all text i dokumentet*/
-    font-family: 'Libre+Franklin', sans-serif; /*font-family är typsnitt för all text i body*/
+    font-family: 'Libre Franklin', sans-serif;; /*font-family är typsnitt för all text i body*/
 }
 
 a {
@@ -48,7 +48,6 @@ footer {
      display: none;
  }
 
- 
  /*för att få länkarna understrukna när du hovrar över dem*/
  .topnav ul li a:hover {
      background-color: plum;
@@ -85,6 +84,9 @@ display: block;
 
  /*== SLUT PÅ HAMBURGERMENYN =======================================*/
 
+ .active {
+     background-color: purple;
+ }
  /*===================== END TOPNAV & HAMBURGERMENY===================*/
 
 
