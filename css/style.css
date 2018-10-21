@@ -96,7 +96,7 @@ display: block;
 
 .grid-container {
      display:grid;
-     grid-gap: 10px; 
+     grid-gap: 1em; 
  grid-template-areas:
  "start start start start start start"
  "sub1 sub1 sub1 sub1 sub1 sub1"
@@ -132,12 +132,14 @@ display: block;
     text-align: center;
     padding-top: 0;
     }
+
 .sub4 {
     grid-area: sub4;
     text-align: center;
     padding-top: 2em;
     padding: 2em;
     }
+    
 .sub5 {
     grid-area: sub5;
     text-align: center;
@@ -167,6 +169,7 @@ display: block;
 /*USP-värden centrerade och stylade*/
 .centered-usp {
     color: #020000;
+    text-shadow: 0 1px silver;
     text-align: center;
     font-size: 6vw;
     padding: auto;   
@@ -193,9 +196,8 @@ blockquote {
     color: #020000;
     font-size: 1em; /*standardradhöjd är oftast 16px*/
     font-style: italic;
-    margin: 2em 2em;
     position: absolute;
-   ; 
+    disp
 }
 
 /*för att placera citationstecken till varje blockquote på sidan*/
@@ -232,7 +234,7 @@ blockquote:after {
 }
 
 /*för att definiera hur t ex kolumner ska se ut i bredd 600 px och därutöver; vad som ska visas annorlunda jämfört med hur de visas på mobilskärm!*/
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
 
     #menu-icon {
         display: none;
@@ -255,5 +257,8 @@ blockquote:after {
 
     }
      
+.wrapper {
+    width: 700px;
+}
     
 }
