@@ -8,8 +8,14 @@ body {
 }
 
 a {
+    color: white; 
+    text-decoration: none;
+}
+a:hover {
     color: white;
-    text-decoration: underline; 
+    text-decoration: underline;
+
+     
 }
 
 /*centrerad text i footern*/
