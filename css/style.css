@@ -134,7 +134,15 @@ display: block;
     text-align: center;
     padding-top: 2em;
     padding: 2em;
+  
 }
+
+.sub3indexpage {
+    background-color: #4E75A0;
+    grid-area: sub3;
+    text-align: center;
+    padding: 0; 
+    }
 
 .sub3 {
     background-color: #4E75A0;
@@ -142,7 +150,7 @@ display: block;
     text-align: center;
     padding-top: 0;
     padding: 2em;
-    }
+}
 
 .sub4 {
     background-color: darkblue;
@@ -200,7 +208,7 @@ display: block;
 /*bild som ska täcka hela vw inom wrappern*/
 .img-wide {
     max-width: 100%;
-    width: auto;
+    height: auto;
 }
 
 /*bild som länkar till kontaktformulär*/
