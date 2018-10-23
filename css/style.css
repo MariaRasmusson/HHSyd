@@ -114,12 +114,14 @@ display: block;
 }
 
  .start {
+     background-color: black;
      grid-area: start;
      text-align: center;
      padding-top: 2em;
      }
      
 .sub1 {
+    background-color: rgb(128, 128, 38);
     grid-area: sub1;
     text-align: center;
     padding-top: 2em;
@@ -127,6 +129,8 @@ display: block;
     }
 
 .sub2 {
+    
+    background-color: maroon;
     grid-area: sub2;
     text-align: center;
     padding-top: 2em;
@@ -134,12 +138,15 @@ display: block;
 }
 
 .sub3 {
+    background-color: #4E75A0;
     grid-area: sub3;
     text-align: center;
     padding-top: 0;
+    padding: 2em;
     }
 
 .sub4 {
+    background-color: darkblue;
     grid-area: sub4;
     text-align: center;
     padding-top: 2em;
@@ -147,6 +154,7 @@ display: block;
     }
     
 .sub5 {
+       background-color: purple;
     grid-area: sub5;
     text-align: center;
     padding-top: 2em;
@@ -216,28 +224,7 @@ blockquote:after {
 
 
 
-/*=========== ID ==========================*/
 
-#startsection {
-    background-color: black;
-}
-
-#section2 {
-    background-color: rgb(128, 128, 38);
-}
-#section3 {
-    background-color: maroon;
-}
-#section4 {
-    background-color: #4E75A0;
-
-}
-#section5 {
-    background-color: darkblue;
-}
-#section6 {
-    background-color: purple;
-}
 
 /*för att definiera hur t ex kolumner ska se ut i bredd 600 px och därutöver; vad som ska visas annorlunda jämfört med hur de visas på mobilskärm!*/
 @media screen and (min-width: 800px) {
