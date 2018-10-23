@@ -14,15 +14,14 @@ a {
 a:hover {
     color: white;
     text-decoration: underline;
-
-     
 }
 
 /*centrerad text i footern*/
 footer {
     text-align: center;
-    padding: 4em 0; /*fyra rader uppe och nere - inget i sidorna.*/
+    padding: 1em 2em;; /*fyra rader uppe och nere - 2 i sidorna.*/
 }
+
 
 /*CLASSES ======================================*/
 
@@ -208,10 +207,10 @@ display: block;
 /*===OBSOBSOBS!!!!!!jag vill att texten ska ligga på bilden men ej ovanpå menyn!!=====*/
 blockquote {
     color: #020000;
-    font-size: 1em; /*standardradhöjd är oftast 16px*/
+    font-size: 0.7em; /*standardradhöjd är oftast 16px*/
     font-style: italic;
     position: absolute;
-    disp
+    margin-right:10em; /*för att texten alltid ska ligga ovanpå bild.*/
 }
 
 /*för att placera citationstecken till varje blockquote på sidan*/
