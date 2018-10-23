@@ -203,6 +203,14 @@ display: block;
     width: auto;
 }
 
+/*bild som länkar till kontaktformulär*/
+.img-small {
+    max-width: 100px;
+    max-height: auto;
+    padding-top:0; /*tar bort top-padding från img-fluid class*/
+
+}
+
 
 /*===OBSOBSOBS!!!!!!jag vill att texten ska ligga på bilden men ej ovanpå menyn!!=====*/
 blockquote {
